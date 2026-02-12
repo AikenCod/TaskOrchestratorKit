@@ -21,6 +21,14 @@
 
 ### 1) Objective-C（CocoaPods）
 
+GitHub 远程方式：
+
+```ruby
+pod 'TaskOrchestratorKit', :git => 'https://github.com/AikenCod/TaskOrchestratorKit.git', :branch => 'main'
+```
+
+本地开发方式：
+
 ```ruby
 pod 'TaskOrchestratorKit', :path => '/path/to/TaskOrchestratorKit'
 ```
@@ -42,6 +50,14 @@ import TaskOrchestratorSwift
 ```
 
 ### 3) Swift（CocoaPods）
+
+GitHub 远程方式：
+
+```ruby
+pod 'TaskOrchestratorSwift', :git => 'https://github.com/AikenCod/TaskOrchestratorKit.git', :branch => 'main'
+```
+
+本地开发方式：
 
 ```ruby
 pod 'TaskOrchestratorSwift', :path => '/path/to/TaskOrchestratorKit'

@@ -23,6 +23,14 @@ Deterministic task orchestration for app startup workflows, with both Objective-
 
 ### Objective-C (CocoaPods)
 
+Remote (GitHub):
+
+```ruby
+pod 'TaskOrchestratorKit', :git => 'https://github.com/AikenCod/TaskOrchestratorKit.git', :branch => 'main'
+```
+
+Local development:
+
 ```ruby
 pod 'TaskOrchestratorKit', :path => '/path/to/TaskOrchestratorKit'
 ```
@@ -40,6 +48,14 @@ import TaskOrchestratorSwift
 ```
 
 ### Swift (CocoaPods)
+
+Remote (GitHub):
+
+```ruby
+pod 'TaskOrchestratorSwift', :git => 'https://github.com/AikenCod/TaskOrchestratorKit.git', :branch => 'main'
+```
+
+Local development:
 
 ```ruby
 pod 'TaskOrchestratorSwift', :path => '/path/to/TaskOrchestratorKit'
