@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Xcode user data
+xcuserdata/
+*.xcuserstate
+*.xcbkptlist
+
+# CocoaPods generated files
+Pods/
+
+# Swift Package Manager local state
+.swiftpm/
+.build/
+
+# Derived data
+DerivedData/

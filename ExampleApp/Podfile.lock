@@ -1,0 +1,21 @@
+PODS:
+  - TaskOrchestratorKit (0.1.0)
+  - TaskOrchestratorSwift (0.1.0)
+
+DEPENDENCIES:
+  - TaskOrchestratorKit (from `..`)
+  - TaskOrchestratorSwift (from `..`)
+
+EXTERNAL SOURCES:
+  TaskOrchestratorKit:
+    :path: ".."
+  TaskOrchestratorSwift:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  TaskOrchestratorKit: 617936fa110475ce531da32d6d1551af553a2982
+  TaskOrchestratorSwift: 848a94ac5c4057c0fe574acfb8d8cae170c7713b
+
+PODFILE CHECKSUM: 7f06ca7c33afabdc860d852801ba97292b49055e
+
+COCOAPODS: 1.16.2
