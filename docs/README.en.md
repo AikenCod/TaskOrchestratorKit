@@ -2,6 +2,8 @@
 
 A deterministic startup task orchestration framework with both Objective-C and Swift implementations.
 
+Keywords: iOS startup optimization, DAG scheduling, task orchestration
+
 ## Features
 
 - Deterministic ordering (priority + registration order)
@@ -106,3 +108,7 @@ See `CONTRIBUTING.md` at repository root.
 ## License
 
 MIT. See `LICENSE`.
+
+## Release
+
+- `v0.1.0`: see `docs/releases/v0.1.0.md`

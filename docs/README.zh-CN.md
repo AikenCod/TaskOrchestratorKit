@@ -2,6 +2,8 @@
 
 一个面向 App 启动编排的任务调度框架，提供 Objective-C 与 Swift 两套实现。
 
+关键词：iOS 启动优化、DAG 调度、任务编排
+
 ## 特性
 
 - 确定性执行顺序（优先级 + 注册顺序）
@@ -118,3 +120,7 @@ open TaskOrchestratorExample.xcworkspace
 ## 许可证
 
 MIT，见 `LICENSE`。
+
+## Release
+
+- `v0.1.0`：见 `docs/releases/v0.1.0.md`

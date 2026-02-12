@@ -4,6 +4,12 @@ Deterministic task orchestration for app startup workflows, with both Objective-
 
 [中文文档](docs/README.zh-CN.md) | [English Docs](docs/README.en.md)
 
+## Keywords
+
+- iOS 启动优化 / iOS startup optimization
+- DAG 调度 / DAG scheduling
+- 任务编排 / task orchestration
+
 ## Highlights
 
 - Deterministic execution order: priority + registration order
@@ -74,6 +80,11 @@ In the app:
 - `运行正常依赖` runs Objective-C normal DAG flow
 - `运行循环依赖` runs Objective-C cycle detection flow
 - `运行 Swift Demo` runs Swift flow through `TaskOrchestratorSwift`
+
+## Release
+
+- [v0.1.0 Release Note](docs/releases/v0.1.0.md)
+- [Changelog](CHANGELOG.md)
 
 ## License
 
