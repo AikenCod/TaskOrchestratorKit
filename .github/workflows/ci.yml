@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  spm-build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Swift Build
+        run: |
+          cd TaskOrchestratorSwift
+          swift build
+
+      - name: Swift Demo Smoke
+        run: |
+          cd TaskOrchestratorSwift
+          swift run DemoRunner
+
+  ios-example-build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install CocoaPods
+        run: |
+          sudo gem install cocoapods --no-document
+
+      - name: Pod Install
+        run: |
+          cd ExampleApp
+          pod install
+
+      - name: Build ExampleApp (No Signing)
+        run: |
+          xcodebuild \
+            -workspace ExampleApp/TaskOrchestratorExample.xcworkspace \
+            -scheme TaskOrchestratorExample \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY='' \
+            build
